@@ -22,7 +22,7 @@ class TestBankAccount(unittest.TestCase):
     def test_withdraw_with_sufficient_funds(self): 
         self.account.deposit(50) 
         self.account.withdraw(30) 
-        self.assertEqual(self.account.get_balance(), 30) 
+        self.assertEqual(self.account.get_balance(), 20) 
 
     def test_withdraw_with_insufficient_funds(self): 
         self.account.deposit(50)
